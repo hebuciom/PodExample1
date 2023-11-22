@@ -9,17 +9,18 @@
 import UIKit
 import PodExample1
 
+let selectedBrand: PodExample1.brand = .Suburbia
+
 class ViewController: UIViewController {
 
   
     @IBOutlet weak var exampleView: PodExample1!
     
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        exampleView.setupView()
-    
+        exampleView.setupView(selectedBrand: selectedBrand)
     }
 
     override func didReceiveMemoryWarning() {

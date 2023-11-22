@@ -8,16 +8,14 @@
 import Foundation
 import UIKit
 
-enum brand {
-    case Liverpool
-    case Suburbia
-}
-
 public class PodExample1 : UIView{
     
-   
+    public enum brand {
+        case Liverpool
+        case Suburbia
+    }
     
-    let selectedBrand: brand = .Suburbia
+    //var selectedBrand: brand = .Liverpool
     var cornerRadius : CGFloat = 5.0
     var bgColor : UIColor = UIColor.white
     
@@ -30,10 +28,9 @@ public class PodExample1 : UIView{
       super.init(coder: aDecoder)
     }
     
-    public func setupView() {
+    public func setupView(selectedBrand: brand) {
     
         switch selectedBrand {
-            
         case .Liverpool:
             
             self.cornerRadius = 10.0
