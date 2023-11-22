@@ -18,11 +18,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        exampleView.setupView(cornerRadius: 30, bgColor: UIColor.orange)
-        
-        
-        
-        
+        exampleView.setupView()
+    
     }
 
     override func didReceiveMemoryWarning() {
